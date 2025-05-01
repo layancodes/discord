@@ -25,15 +25,16 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", msg => {
-  if (msg.content === "i love my" && msg.author.bot == "wrathwrath")  {
-    msg.reply("gf");
+  if (msg.content === "i love my" && msg.author.id == "125270655141675008")  {
+    msg.reply("girlfriend so much!");
   }
-  else if (msg.content === "i love my" && msg.author.bot == "nemeton5511")  {
-    msg.reply("bf");
+  else if (msg.content === "i love my" && msg.author.username == "nemeton5511")  {
+    msg.reply("boyfriend so much!");
+  } 
+  else if (msg.content === "i think my girlfriend is" && msg.author.id == "125270655141675008")  {
+    msg.reply("super smart and beautiful");
   }
-  else {
-    msg.reply("ERROR");
-  }
+
 
 });
 
